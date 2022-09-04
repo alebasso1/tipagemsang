@@ -64,11 +64,13 @@ botaoO.addEventListener('click', sangueO);
 
 
 const botaoRH = document.getElementById('botaoRhPositivo');
-const contentRH = document.getElementById('descricaoRhPositivo')
+const contentRH = document.getElementById('descricaoRhPositivo');
+const amostraRH = document.getElementById('amostraRhPositivo');
 
 
 function rhPositivo() {
-    contentRH.innerHTML = 'O anticorpo anti-RH reagiu com a proteína RH das hemaceas - tipo RH+.'
+    amostraRH.src = './img/rh-.JPG';
+    contentRH.innerHTML = 'O anticorpo anti-RH reagiu com a proteína RH das hemaceas - tipo RH+.';
 
 }
 
@@ -80,13 +82,12 @@ botaoRH.addEventListener('click', rhPositivo);
 
 //Code para RH-
 //O anticorpo anti-RH não reagiu com a proteína RH das hemaceas - tipo RH-.
-const amostraRHn = document.getElementById('amostraTipoRHn');
 const botaoRHn = document.getElementById('botaoRHn');
 const contentRHn = document.getElementById('descricaoRHn');
 
 
 function rhNeg() {
-    amostraRHn.src = './img/rh-.JPG';
+    
     contentRHn.innerHTML = 'O anticorpo anti-RH não reagiu com a proteína RH das hemaceas - tipo RH-.';
 
 }
